@@ -15,7 +15,8 @@ raw.head(5)
 df = raw[['ip9', 'ip9_1']]
 
 # %%
-df.to_csv('data/processed/df_for_worldcloud.csv')
+df.to_csv('data/processed/df_for_worldcloud.csv',
+    index = False)
 
 # %%
 df.ip9.value_counts()
